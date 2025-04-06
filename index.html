@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuerdabajo</title>
+
+    <!-- CDN de Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Tu estilo personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="overflow-x-hidden">
+
+    <header class="absolute top-0 left-0 w-full z-40 bg-[#0b1623]">
+        <div class="flex justify-between items-center py-4 px-8">
+          
+          <!-- Enlaces a la izquierda -->
+          <nav class="flex gap-6 text-white text-base font-medium">
+            <a href="#precios" class="px-4 py-2 rounded-full transition duration-300 hover:bg-white hover:text-black">Precios</a>
+            <a href="#musica" class="px-4 py-2 rounded-full transition duration-300 hover:bg-white hover:text-black">Música</a>
+            <a href="https://linktr.ee/cuerdabajo" class="px-4 py-2 rounded-full transition duration-300 hover:bg-white hover:text-black">Contacto</a>
+          </nav>
+      
+          <!-- Logo a la derecha -->
+          <div class="w-10 h-10">
+            <img src="img/logo cuerdabajo png invert.png" alt="Logo" class="w-full h-full object-cover" />
+          </div>
+      
+        </div>
+      </header>
+      
+      
+      <!-- Inicio -->
+      <div class="slider" id="inicio">
+        <div class="list">
+          <div class="item relative">
+            <img src="img/1.jpg" alt="" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent z-10"></div>
+            <div class="banner-container">
+                <div class="banner-content">
+                  <h2 class="banner-title">Cuerdabajo, agrupación musical carranguera para tus fiestas</h2>
+                  <a href="https://wa.me/3135651518" target="_blank"
+                  class="bg-transparent text-white text-base font-medium py-2 px-6 rounded-xl border-2 border-white transition-all duration-300 transform hover:scale-105 hover:bg-orange-500 hover:border-orange-500">
+                  Contáctenos
+               </a>
+                               </div>
+              </div> 
+          </div>
+      
+          <!-- Repite este bloque para los otros slides cambiando el texto y la imagen -->
+          <div class="item relative">
+            <img src="img/2.jpg" alt="" class="w-full h-full object-cover">
+            <div class="banner-container">
+                <div class="banner-content">
+                  <h2 class="banner-title">Agrupación musical carranguera para tus fiestas</h2>
+                  <a href="https://wa.me/3135651518" target="_blank"
+                  class="bg-transparent text-white text-base font-medium py-2 px-6 rounded-xl border-2 border-white transition-all duration-300 transform hover:scale-105 hover:bg-orange-500 hover:border-orange-500">
+                  Contáctenos
+               </a>
+                               </div>
+              </div> 
+          </div>
+      
+          <div class="item relative">
+            <img src="img/3.jpg" alt="" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent z-10"></div>
+                       <div class="banner-container">
+                <div class="banner-content">
+                  <h2 class="banner-title">Agrupación musical carranguera para tus fiestas</h2>
+                  <a href="https://wa.me/3135651518" target="_blank"
+   class="bg-transparent text-white text-base font-medium py-2 px-6 rounded-xl border-2 border-white transition-all duration-300 transform hover:scale-105 hover:bg-orange-500 hover:border-orange-500">
+   Contáctenos
+</a>
+
+                </div>
+              </div> 
+          </div>
+      
+          <div class="item relative">
+            <img src="img/4.jpg" alt="" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent z-10"></div>
+            <div class="banner-container">
+                <div class="banner-content">
+                  <h2 class="banner-title">Agrupación musical carranguera para tus fiestas</h2>
+                  <a href="https://wa.me/3135651518" target="_blank"
+                  class="bg-transparent text-white text-base font-medium py-2 px-6 rounded-xl border-2 border-white transition-all duration-300 transform hover:scale-105 hover:bg-orange-500 hover:border-orange-500">
+                  Contáctenos
+               </a>
+               
+                </div>
+              </div> 
+          </div>
+        </div>
+      
+        <!-- Botones -->
+        <div class="buttons">
+          <button id="prev"><</button>
+          <button id="next">></button>
+        </div>
+      
+        <!-- Dots -->
+        <ul class="dots">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      
+      <!-- Gancho visual -->
+      <section class="w-screen overflow-hidden flex flex-col md:flex-row h-auto md:h-[500px] relative">
+
+  
+        <!-- Izquierda: Texto + Botón -->
+        <div class="md:w-1/2 w-full flex flex-col justify-center items-center md:items-start p-20 bg-white">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center md:text-left">
+            ¡Haz de tu evento algo inolvidable!<br> Contrata a nuestro grupo musical.
+          </h2>
+          <a href="https://wa.me/3135651518" target="_blank" 
+                class="bg-orange-500 hover:bg-orange-600 text-white text-lg font-semibold py-4 px-8 rounded-2xl transition transform hover:scale-105">
+                Contáctenos
+            </a>
+
+        </div>
+      
+        <!-- Derecha: Video -->
+        <div class="md:w-1/2 w-full h-full relative">
+          <video id="promoVideo" class="w-full h-full object-cover" autoplay muted loop>
+            <source src="/img/Video publi substitulos.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+          </video>
+      
+          <!-- Botón mute/unmute -->
+          <button 
+            onclick="toggleMute()" 
+            class="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-4 py-2 rounded-xl hover:bg-opacity-70 transition"
+            >
+            🔇 Silenciar
+            </button>
+
+        </div>
+      
+      </section>
+
+      <section class="bg-[#0b1623] pt-12 pb-12" id="precios"> 
+        <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center text-white">¿Que ofrecemos?</h2>
+        <div class="swiper mySwiper w-100">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="flex flex-col bg-white rounded-2xl shadow-md overflow-hidden">
+                  <div class="w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/ev3btG7V-vA" title="Colegiala - Rodolfo Aicardi (Cover en Vivo) - Agrupación Cuerdabajo 🎶💃" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div class="flex flex-col items-center px-4 py-3 space-y-2">
+                    <h3 class="text-lg font-semibold text-gray-800 text-center">Paquete Económico</h3>
+                    <p class="text-sm text-gray-600 text-center">
+                      🎶 4 músicos con pura sabrosura: tiple, requinto, bajo y guacharaca.<br>
+                      🕒 30 minutos para prender la fiesta.<br>
+                      🔇 No incluye amplificación, pero sí toda la actitud.
+                    </p>
+                    <a href="https://wa.me/573135651518" target="_blank" class="px-4 py-2 mt-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">
+                      más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="flex flex-col bg-white rounded-2xl shadow-md overflow-hidden">
+                  <div class="w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/ev3btG7V-vA" title="Colegiala - Rodolfo Aicardi (Cover en Vivo) - Agrupación Cuerdabajo 🎶💃" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div class="flex flex-col items-center px-4 py-3 space-y-2">
+                    <h3 class="text-lg font-semibold text-gray-800 text-center">Paquete Estándar</h3>
+                    <p class="text-sm text-gray-600 text-center">
+                      🥁 5 músicos con requinto, tiple, bajo, timbales y guacharaca.<br>
+                      🔊 Sonido básico incluido para que se escuche con todo.<br>
+                      ⏰ 1 hora de presentación llena de ritmo y flow.
+                    </p>
+                    <a href="https://wa.me/573135651518" target="_blank" class="px-4 py-2 mt-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">
+                      más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="flex flex-col bg-white rounded-2xl shadow-md overflow-hidden">
+                  <div class="w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/ev3btG7V-vA" title="Colegiala - Rodolfo Aicardi (Cover en Vivo) - Agrupación Cuerdabajo 🎶💃" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div class="flex flex-col items-center px-4 py-3 space-y-2">
+                    <h3 class="text-lg font-semibold text-gray-800 text-center">Paquete Gold</h3>
+                    <p class="text-sm text-gray-600 text-center">
+                      ✨ 7 músicos con toda la artillería musical: requinto, tiple, batería, timbales, bajo, congas y guacharaca.<br>
+                      🔊 Sonido profesional incluido.<br>
+                      ⏰ 1 hora de pura calidad y sabor.
+                    </p>
+                    <a href="https://wa.me/573135651518" target="_blank" class="px-4 py-2 mt-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">
+                      más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="flex flex-col bg-white rounded-2xl shadow-md overflow-hidden">
+                  <div class="w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/ev3btG7V-vA" title="Colegiala - Rodolfo Aicardi (Cover en Vivo) - Agrupación Cuerdabajo 🎶💃" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div class="flex flex-col items-center px-4 py-3 space-y-2">
+                    <h3 class="text-lg font-semibold text-gray-800 text-center">Para Eventos de Magnitud</h3>
+                    <p class="text-sm text-gray-600 text-center">
+                      🎸 7 músicos, 7 instrumentos épicos: guitarra eléctrica y acústica, bajo, piano, timbales, guacharaca y congas.<br>
+                      🎤 Show de 1 a 1.5 horas para grandes tarimas y grandes momentos.
+                    </p>
+                    <a href="https://wa.me/573135651518" target="_blank" class="px-4 py-2 mt-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">
+                      más información
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              
+              
+          </div>
+        </div>
+      </section>
+            
+      <!-- Nosotros -->
+      <section class="w-full bg-white text-gray-800 py-16 px-4" id="nosotros">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-10">
+      
+          <!-- Video a la izquierda -->
+          <div class="flex-1 w-full">
+            <div class="aspect-video w-full rounded-2xl shadow-lg overflow-hidden">
+              <iframe 
+                class="w-full h-full" 
+                src="https://www.youtube.com/embed/AicHOLA_Le8?start=980" 
+                title="Presentación Cuerdabajo" 
+                frameborder="0" 
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+      
+          <!-- Texto a la derecha -->
+          <div class="flex-1 w-full space-y-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-orange-500">Cuerdabajo</h2>
+            <p class="text-lg leading-relaxed">
+              <span class="text-orange-500 font-semibold">Cuerdabajo</span> es una <span class="text-orange-500 font-semibold">agrupación musical en vivo</span> que se caracteriza por su <span class="text-orange-500 font-semibold">versatilidad</span> y <span class="text-orange-500 font-semibold">energía en el escenario</span>. 
+              Su propuesta incluye géneros tradicionales como <span class="text-orange-500 font-semibold">cumbia</span>, <span class="text-orange-500 font-semibold">carranga</span> y <span class="text-orange-500 font-semibold">parranda</span>, ideales para <span class="text-orange-500 font-semibold">eventos, fiestas y celebraciones</span>.
+            </p>
+            <a href="portafolio/portafolio.html" target="_blank" 
+              class="inline-block bg-orange-500 hover:bg-orange-600 text-white text-lg font-semibold py-4 px-8 rounded-2xl transition transform hover:scale-105">
+              ¿Quieres saber más sobre nosotros?
+            </a>
+          </div>
+      
+        </div>
+      </section>
+      
+      
+      <!-- Lanzamientos -->
+      <section class="w-full bg-[#0b1623] text-white py-16 px-4" id="musica">
+        <div class="max-w-6xl mx-auto">
+          
+          <!-- Título -->
+          <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">Últimos lanzamientos</h2>
+          
+          <div class="flex flex-col md:flex-row gap-8 items-start">
+            
+            <!-- Video de YouTube -->
+            <div class="flex-1 w-full aspect-video">
+              <iframe 
+                class="w-full h-full rounded-2xl shadow-lg" 
+                src="https://www.youtube.com/embed/ftHTzbktJ00?start=1700" 
+                title="Último video musical" 
+                frameborder="0" 
+                allowfullscreen
+              ></iframe>
+            </div>
+        
+            <!-- Lanzamiento Spotify -->
+            <div class="flex flex-col gap-6 w-full md:max-w-sm">
+              <iframe 
+                class="w-full h-80 rounded-2xl shadow-lg" 
+                src="https://open.spotify.com/embed/track/TU_TRACK_ID_1?utm_source=generator" 
+                frameborder="0" 
+                allowfullscreen 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              ></iframe>
+            </div>
+        
+          </div>
+        </div>
+      </section>
+      
+      <!-- Footeer -->
+      <footer class="bg-[#0b1623] text-white py-10 px-4 border-t border-gray-700">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start ">
+      
+          <!-- Nombre / descripción -->
+          <div class="flex items-center justify-center">
+            <img src="img/foto perfil.png" alt="Logo Cuerdabajo" class="w-24 h-24 rounded-full object-cover shadow-lg" />
+          </div>
+          
+      
+          <!-- Enlaces -->
+          <div class="space-y-2">
+            <h4 class="text-lg font-semibold text-orange-400">Enlaces</h4>
+            <ul class="text-gray-300 space-y-1">
+              <li><a href="#" class="hover:text-white transition">Inicio</a></li>
+              <li><a href="https://linktr.ee/cuerdabajo" class="hover:text-white transition">Contáctanos</a></li>
+              <li><a href="#precios" class="hover:text-white transition">precios</a></li>
+              <li><a href="#musica" class="hover:text-white transition">Lanzamientos</a></li>
+            </ul>
+          </div>
+      
+          <!-- Redes sociales -->
+          <div>
+            <h4 class="text-lg font-semibold text-orange-400">Síguenos</h4>
+            <div class="flex space-x-6 mt-4 text-2xl">
+              <a href="https://www.tiktok.com/@agrupacioncuerdabajo" target="_blank" class="hover:text-orange-500 transition">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a href="https://www.instagram.com/agrupacion_cuerdabajo/" target="_blank" class="hover:text-orange-500 transition">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          
+      
+        </div>
+      
+        <!-- Derechos -->
+        <div class="mt-10 text-center text-gray-500 text-sm border-t border-gray-700 pt-6">
+          © 2025 Cuerdabajo. Todos los derechos reservados.
+        </div>
+      </footer>
+      
+    
+    
+      
+
+    <script src="js/app.js"></script>
+    <script src="https://kit.fontawesome.com/381592b739.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js" ></script>
+
+</body>
+
+</html>
